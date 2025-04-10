@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - BreakThrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BreakThrough Tech</div>
+        <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main class="courses-page">
+        <section class="course-search">
+            <input type="text" id="courseSearch" placeholder="Search courses...">
+        </section>
+
+        <section class="courses-grid">
+            <div class="course-item">
+                <img src="images/Web2.jpg" alt="Web Development" style="object-position: center top;">
+                <div class="course-info">
+                    <h3>Full Stack Web Development</h3>
+                    <p>Master HTML, CSS, JavaScript, and modern frameworks to build responsive, interactive websites and web applications.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                    </div>
+                    <button class="enroll-btn" data-course="web-dev">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <img src="images/Data2.jpg" alt="Data Science" style="object-position: center center;">
+                <div class="course-info">
+                    <h3>Data Science & Analytics</h3>
+                    <p>Learn Python, data analysis, visualization, and machine learning to extract insights from complex datasets.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn" data-course="data-science">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <img src="images/App2.jpg" alt="Mobile Development" style="object-position: center center;">
+                <div class="course-info">
+                    <h3>Mobile App Development</h3>
+                    <p>Build cross-platform iOS and Android applications using React Native and modern mobile development techniques.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                    </div>
+                    <button class="enroll-btn" data-course="mobile-dev">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <img src="images/UX1.jpg" alt="UI/UX Design" style="object-position: center top;">
+                <div class="course-info">
+                    <h3>UI/UX Design</h3>
+                    <p>Master user interface and experience design principles, prototyping, and user research methodologies.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                    </div>
+                    <button class="enroll-btn" data-course="ui-ux">Enroll Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enrollment Form Modal -->
+        <div id="enrollmentModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Course Enrollment</h2>
+                <form id="enrollmentForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Enrollment</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@breakthroughtech.com</p>
+                <p>Phone: +256 741 312 398</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BreakThrough Tech Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
